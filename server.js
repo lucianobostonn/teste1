@@ -30,7 +30,7 @@ io.on("connection", (socket) => {
 
 
 
-const Porta = 3100
+const Porta = process.env.PORT || 3100
 
 server.listen(Porta, () => {
     console.log(`Servidor rodando na porta ${Porta}`)
